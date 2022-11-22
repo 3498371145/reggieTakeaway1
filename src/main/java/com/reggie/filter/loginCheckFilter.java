@@ -35,7 +35,12 @@ public class loginCheckFilter implements Filter {
                 "/user/sendMsg",
                 "/user/login",
                 "/favicon.ico",
-                "/orderDetail/**"};
+                "/orderDetail/**",
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
+        };
         boolean check = check(requestURI, urls);
         //不需要处理直接放行
         if (check) {
